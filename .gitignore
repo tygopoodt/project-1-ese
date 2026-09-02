@@ -1,0 +1,11 @@
+# Blender auto-backups (elke save maakt er weer een, hoort niet in git)
+*.blend1
+*.blend2
+
+# Tijdelijke Office-bestanden
+~$*
+
+# TE GROOT VOOR GITHUB (759 MB, limiet is 100 MB).
+# Zie BlenderTrackSimulation-SLIM.blend: zelfde scene, 37 MB.
+# Haal deze regel weg zodra het originele bestand vervangen is door de slanke versie.
+Software/Simulations/BlenderTrackSimulation.blend

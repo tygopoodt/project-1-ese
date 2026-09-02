@@ -36,6 +36,7 @@ opnieuw op de tekentafel, nu in C met directe registermanipulatie.
 | Map | Inhoud |
 | --- | --- |
 | `Software/` | Firmware voor de ATmega328P |
+| `Software/Simulations/` | Blender-simulatie van de baan + [voorbeeldvideo](Software/Simulations/Simulatievoorbeeld%20Autonomous%20driving.mp4) |
 | `Hardware/` | Schema's, componentkeuzes en het 3D-model van het chassis |
 | `Documentatie/Templates/` | Huisstijl-templates: agenda, notulen, productrapport |
 | `Documentatie/Content/` | Logo's en beeldmateriaal Q-Dat Systems |
