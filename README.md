@@ -36,7 +36,7 @@ opnieuw op de tekentafel, nu in C met directe registermanipulatie.
 | Map | Inhoud |
 | --- | --- |
 | `Software/` | Firmware voor de ATmega328P |
-| `Software/Simulations/` | Blender-simulatie van de baan + [voorbeeldvideo](Software/Simulations/Simulatievoorbeeld%20Autonomous%20driving.mp4) |
+| `Software/Simulations/` | Blender-simulatie van de baan en de simulatievideo |
 | `Hardware/` | Schema's, componentkeuzes en het 3D-model van het chassis |
 | `Documentatie/Templates/` | Huisstijl-templates: agenda, notulen, productrapport |
 | `Documentatie/Content/` | Logo's en beeldmateriaal Q-Dat Systems |
@@ -50,6 +50,12 @@ opnieuw op de tekentafel, nu in C met directe registermanipulatie.
 - **T5** Besturing en tests via de USART
 - **T6** Voeding uit batterijen, met polariteits- en kortsluitbeveiliging
 - **B1** Maximaal &euro;50,- aan aanvullende componenten
+
+## Simulatie
+
+Een eerste beeld van de autonoom rijdende auto's op de baan, gerenderd in Blender:
+
+https://github.com/tygopoodt/project-1-ese/raw/main/Software/Simulations/Simulatievoorbeeld%20Autonomous%20driving.mp4
 
 ## Team
 
