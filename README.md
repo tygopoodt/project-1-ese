@@ -36,7 +36,6 @@ opnieuw op de tekentafel, nu in C met directe registermanipulatie.
 | Map | Inhoud |
 | --- | --- |
 | `Software/` | Firmware voor de ATmega328P |
-| `Software/Simulations/` | Blender-simulatie van de baan en de simulatievideo |
 | `Hardware/` | Schema's, componentkeuzes en het 3D-model van het chassis |
 | `Documentatie/Templates/` | Huisstijl-templates: agenda, notulen, productrapport |
 | `Documentatie/Content/` | Logo's en beeldmateriaal Q-Dat Systems |
@@ -50,21 +49,6 @@ opnieuw op de tekentafel, nu in C met directe registermanipulatie.
 - **T5** Besturing en tests via de USART
 - **T6** Voeding uit batterijen, met polariteits- en kortsluitbeveiliging
 - **B1** Maximaal &euro;50,- aan aanvullende componenten
-
-## Simulatie
-
-In Blender rijden vierentwintig auto's tegelijk hun eigen baan, zodat een
-afstelling in één keer over veel verschillende bochten getest wordt.
-
-<p align="center">
-  <a href="Software/Simulations/Simulatievoorbeeld%20Autonomous%20driving.mp4">
-    <img src="Software/Simulations/preview.png" alt="Simulatie van de lijnvolger in Blender" width="760">
-  </a>
-</p>
-
-<p align="center">
-  <sub>Klik voor de video (12 s) &middot; scene: <code>BlenderTrackSimulation-SLIM.blend</code></sub>
-</p>
 
 ## Team
 
