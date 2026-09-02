@@ -36,7 +36,7 @@ opnieuw op de tekentafel, nu in C met directe registermanipulatie.
 | Map | Inhoud |
 | --- | --- |
 | `Software/` | Firmware voor de ATmega328P |
-| `Hardware/` | Schema's, PCB en componentkeuzes |
+| `Hardware/` | Schema's, componentkeuzes en het 3D-model van het chassis |
 | `Documentatie/Templates/` | Huisstijl-templates: agenda, notulen, productrapport |
 | `Documentatie/Content/` | Logo's en beeldmateriaal Q-Dat Systems |
 | `Documentatie/School Docs/` | Projecthandleiding, beoordelingsformulieren en richtlijnen |

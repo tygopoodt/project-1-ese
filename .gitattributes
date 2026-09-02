@@ -1,0 +1,13 @@
+# 3D-modellen: nooit als tekst behandelen (geen regeleinde-conversie, geen diff)
+*.stl  binary
+*.STL  binary
+*.step binary
+*.STEP binary
+*.stp  binary
+*.STP  binary
+
+# Office-documenten
+*.docx binary
+*.xlsx binary
+*.pdf  binary
+*.png  binary
