@@ -53,9 +53,9 @@ opnieuw op de tekentafel, nu in C met directe registermanipulatie.
 
 ## Simulatie
 
-Een eerste beeld van de autonoom rijdende auto's op de baan, gerenderd in Blender:
-
-https://github.com/tygopoodt/project-1-ese/raw/main/Software/Simulations/Simulatievoorbeeld%20Autonomous%20driving.mp4
+Een eerste beeld van de autonoom rijdende auto's op de baan, gerenderd in Blender.
+&rarr; [**Simulatievoorbeeld Autonomous driving.mp4**](Software/Simulations/Simulatievoorbeeld%20Autonomous%20driving.mp4)
+(12 s, speelt af in GitHub zelf)
 
 ## Team
 
