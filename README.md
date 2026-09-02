@@ -53,9 +53,18 @@ opnieuw op de tekentafel, nu in C met directe registermanipulatie.
 
 ## Simulatie
 
-Een eerste beeld van de autonoom rijdende auto's op de baan, gerenderd in Blender.
-&rarr; [**Simulatievoorbeeld Autonomous driving.mp4**](Software/Simulations/Simulatievoorbeeld%20Autonomous%20driving.mp4)
-(12 s, speelt af in GitHub zelf)
+In Blender rijden vierentwintig auto's tegelijk hun eigen baan, zodat een
+afstelling in één keer over veel verschillende bochten getest wordt.
+
+<p align="center">
+  <a href="Software/Simulations/Simulatievoorbeeld%20Autonomous%20driving.mp4">
+    <img src="Software/Simulations/preview.png" alt="Simulatie van de lijnvolger in Blender" width="760">
+  </a>
+</p>
+
+<p align="center">
+  <sub>Klik voor de video (12 s) &middot; scene: <code>BlenderTrackSimulation-SLIM.blend</code></sub>
+</p>
 
 ## Team
 
