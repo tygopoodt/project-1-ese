@@ -1,0 +1,145 @@
+% ============================================================
+%  referenties.bib
+%  Literatuur bij het zij-onderzoek: simulatie + auto-tuning
+%  van de lijnvolger-regelaar voor de Robot-car.
+%
+%  Alle velden hieronder zijn geverifieerd via de uitgever,
+%  arXiv of ASME/IEEE/ACM (september 2026).
+% ============================================================
+
+% ---------- A. Reality gap / sim-to-real ----------
+
+@incollection{jakobi1995noise,
+  author    = {Jakobi, Nick and Husbands, Phil and Harvey, Inman},
+  title     = {Noise and the Reality Gap: The Use of Simulation in Evolutionary Robotics},
+  booktitle = {Advances in Artificial Life ({ECAL} 1995)},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {929},
+  pages     = {704--720},
+  publisher = {Springer},
+  year      = {1995},
+  doi       = {10.1007/3-540-59496-5_337}
+}
+
+@article{jakobi1997envelope,
+  author  = {Jakobi, Nick},
+  title   = {Evolutionary Robotics and the Radical Envelope-of-Noise Hypothesis},
+  journal = {Adaptive Behavior},
+  volume  = {6},
+  number  = {2},
+  pages   = {325--368},
+  year    = {1997},
+  doi     = {10.1177/105971239700600205}
+}
+
+@inproceedings{mouret2017realitygap,
+  author    = {Mouret, Jean-Baptiste and Chatzilygeroudis, Konstantinos},
+  title     = {20 Years of Reality Gap: A Few Thoughts About Simulators in Evolutionary Robotics},
+  booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference Companion ({GECCO} '17)},
+  pages     = {1121--1124},
+  publisher = {ACM},
+  year      = {2017},
+  doi       = {10.1145/3067695.3082052}
+}
+
+@article{muratore2022randomized,
+  author  = {Muratore, Fabio and Ramos, Fabio and Turk, Greg and Yu, Wenhao
+             and Gienger, Michael and Peters, Jan},
+  title   = {Robot Learning From Randomized Simulations: A Review},
+  journal = {Frontiers in Robotics and {AI}},
+  volume  = {9},
+  pages   = {799893},
+  year    = {2022},
+  doi     = {10.3389/frobt.2022.799893},
+  note    = {Preprint: arXiv:2111.00956}
+}
+
+@inproceedings{tobin2017domain,
+  author    = {Tobin, Josh and Fong, Rachel and Ray, Alex and Schneider, Jonas
+               and Zaremba, Wojciech and Abbeel, Pieter},
+  title     = {Domain Randomization for Transferring Deep Neural Networks
+               from Simulation to the Real World},
+  booktitle = {2017 {IEEE/RSJ} International Conference on Intelligent Robots
+               and Systems ({IROS})},
+  pages     = {23--30},
+  publisher = {IEEE},
+  year      = {2017},
+  doi       = {10.1109/IROS.2017.8202133},
+  note      = {Preprint: arXiv:1703.06907}
+}
+
+% ---------- B. PID / regeltechniek, praktisch ----------
+
+@article{ziegler1942optimum,
+  author  = {Ziegler, J. G. and Nichols, N. B.},
+  title   = {Optimum Settings for Automatic Controllers},
+  journal = {Transactions of the {ASME}},
+  volume  = {64},
+  number  = {8},
+  pages   = {759--765},
+  year    = {1942},
+  doi     = {10.1115/1.4019264}
+}
+
+@article{wescott2000pid,
+  author  = {Wescott, Tim},
+  title   = {{PID} Without a {PhD}},
+  journal = {Embedded Systems Programming},
+  year    = {2000},
+  month   = {oct},
+  url     = {https://www.wescottdesign.com/articles/pid/pidWithoutAPhd.pdf}
+}
+
+% ---------- C. Optimalisatie ----------
+
+@misc{hansen2016cma,
+  author       = {Hansen, Nikolaus},
+  title        = {The {CMA} Evolution Strategy: A Tutorial},
+  year         = {2016},
+  eprint       = {1604.00772},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.LG},
+  url          = {https://arxiv.org/abs/1604.00772}
+}
+
+% ---------- D. Lijnvolgers specifiek ----------
+
+@inproceedings{pakdaman2009line,
+  author    = {Pakdaman, M. and Sanaatiyan, M. M.},
+  title     = {Design and Implementation of Line Follower Robot},
+  booktitle = {2009 Second International Conference on Computer and
+               Electrical Engineering ({ICCEE})},
+  volume    = {2},
+  pages     = {585--590},
+  publisher = {IEEE},
+  year      = {2009},
+  doi       = {10.1109/ICCEE.2009.43}
+}
+
+@misc{oguten2021pid,
+  author        = {Oguten, Samet and Kabas, Bilal},
+  title         = {{PID} Controller Optimization for Low-cost Line Follower Robots},
+  year          = {2021},
+  eprint        = {2111.04149},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.RO},
+  url           = {https://arxiv.org/abs/2111.04149}
+}
+
+% ---------- E. Kinematica / achtergrond ----------
+
+@book{siegwart2011introduction,
+  author    = {Siegwart, Roland and Nourbakhsh, Illah R. and Scaramuzza, Davide},
+  title     = {Introduction to Autonomous Mobile Robots},
+  edition   = {2},
+  publisher = {MIT Press},
+  year      = {2011}
+}
+
+@book{dudek2010computational,
+  author    = {Dudek, Gregory and Jenkin, Michael},
+  title     = {Computational Principles of Mobile Robotics},
+  edition   = {2},
+  publisher = {Cambridge University Press},
+  year      = {2010}
+}
