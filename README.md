@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Documentatie/Content/Q-Dat%20Systems%20Banner.png" alt="Q-Dat Systems" width="820">
+  <img src="Documentatie/Logo%27s/Q-Dat%20Systems%20Banner.png" alt="Q-Dat Systems" width="820">
 </p>
 
 <h1 align="center">Robot-car</h1>
@@ -37,9 +37,12 @@ opnieuw op de tekentafel, nu in C met directe registermanipulatie.
 | --- | --- |
 | `Software/` | Firmware voor de ATmega328P |
 | `Hardware/` | Schema's, componentkeuzes en het 3D-model van het chassis |
-| `Documentatie/Templates/` | Huisstijl-templates: agenda, notulen, productrapport |
-| `Documentatie/Content/` | Logo's en beeldmateriaal Q-Dat Systems |
-| `Documentatie/School Docs/` | Projecthandleiding, beoordelingsformulieren en richtlijnen |
+| `Documentatie/` | Functioneel ontwerp, MoSCoW-eisen, planning, notulen en huisstijl-templates |
+| `Documentatie/Logo's/` | Logo's, banner en logo-animatie Q-Dat Systems |
+| `Documentatie/Schetsen/` | UI-schetsen van bediening, displays en gedrag |
+| `Documentatie/Frame-analyse/` | Analyse van frame, spoorbreedte en massa |
+| `Documentatie/Simulatie Onderzoek/` | MATLAB-simulaties voor lijnvolgen en obstakeldetectie |
+| `Documentatie/SchoolDocumenten_Project/` | Projecthandleiding, beoordelingsformulieren en richtlijnen |
 
 ## Kernvereisten
 
