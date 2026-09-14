@@ -5,9 +5,9 @@
 *.STEP binary
 *.stp  binary
 *.STP  binary
-
 # Office-documenten
 *.docx binary
 *.xlsx binary
 *.pdf  binary
 *.png  binary
+Hardware/3D[[:space:]]Files/Robot_Smart_Car_Kit_v2.SLDASM filter=lfs diff=lfs merge=lfs -text
