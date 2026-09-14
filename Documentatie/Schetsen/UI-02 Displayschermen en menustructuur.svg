@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 660" width="900" height="660">
+<style>
+  text{font-family:Arial,Helvetica,sans-serif;fill:#111}
+  .ttl{font-size:18px;font-weight:bold}
+  .sub{font-size:12.5px;fill:#555}
+  .sec{font-size:14px;font-weight:bold}
+  .lbl{font-size:12.5px}
+  .cap{font-size:12px;font-weight:bold}
+  .note{font-size:11.5px;fill:#555;font-style:italic}
+  .scr{fill:#1a1a1a;stroke:#111;stroke-width:1.5;rx:3}
+  .scrt{fill:#fff;font-family:Consolas,"Courier New",monospace}
+  .lead{stroke:#1F6F8B;stroke-width:1.2;fill:none}
+  .flow{stroke:#111;stroke-width:1.6;fill:none}
+  .flowt{font-size:11px;fill:#111}
+</style>
+<defs>
+  <marker id="ar" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto">
+    <path d="M0,0 L8,3 L0,6 z" fill="#1F6F8B"/>
+  </marker>
+  <marker id="ab" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto">
+    <path d="M0,0 L8,3 L0,6 z" fill="#111"/>
+  </marker>
+</defs>
+<rect width="900" height="660" fill="#fff"/>
+
+<text class="ttl" x="40" y="34">Figuur 2 — Displayschermen en menustructuur</text>
+<text class="sub" x="40" y="54">Weergave (F5) en modekeuze (F6) voor de modes Autonoom (F2) en Slave (F3).</text>
+
+<!-- ============ A. REGELINDELING ============ -->
+<text class="sec" x="40" y="90">A. Vaste regelindeling van het display</text>
+
+<rect class="scr" x="55" y="108" width="290" height="112"/>
+<text class="scrt" xml:space="preserve" x="70" y="134" font-size="15">AUTONOOM       87%</text>
+<text class="scrt" xml:space="preserve" x="70" y="160" font-size="15">VOORUIT    STAND 2</text>
+<text class="scrt" xml:space="preserve" x="70" y="186" font-size="15">MODE:       125 s</text>
+<text class="scrt" xml:space="preserve" x="70" y="212" font-size="15">TOTAAL:     483 s</text>
+
+<path class="lead" d="M345,128 L400,128" marker-end="url(#ar)"/>
+<text class="lbl" x="408" y="126">Regel 1 — actieve mode + batterijniveau in %</text>
+<text class="note" x="408" y="142">F5.2 en F5.4</text>
+<path class="lead" d="M345,155 L400,164" marker-end="url(#ar)"/>
+<text class="lbl" x="408" y="166">Regel 2 — rijrichting + snelheidsstand, of status</text>
+<text class="note" x="408" y="182">F5.1 en F1.3</text>
+<path class="lead" d="M345,183 L400,202" marker-end="url(#ar)"/>
+<text class="lbl" x="408" y="204">Regel 3 — tijd in de huidige mode, in seconden</text>
+<text class="note" x="408" y="220">F5.3</text>
+<path class="lead" d="M345,210 L400,240" marker-end="url(#ar)"/>
+<text class="lbl" x="408" y="242">Regel 4 — totale gebruikstijd, in seconden</text>
+<text class="note" x="408" y="258">F5.3 en F7</text>
+
+<text class="note" x="55" y="242">Indeling is in elke mode gelijk.</text>
+
+<line x1="40" y1="272" x2="860" y2="272" stroke="#111" stroke-width="1"/>
+
+<!-- ============ B. MENUSTRUCTUUR ============ -->
+<text class="sec" x="40" y="300">B. Schermen en menustructuur</text>
+
+<!-- hoofdmenu -->
+<text class="cap" x="55" y="336">Hoofdmenu</text>
+<rect class="scr" x="55" y="346" width="210" height="92"/>
+<text class="scrt" xml:space="preserve" x="66" y="368" font-size="12">&gt; AUTONOOM</text>
+<text class="scrt" xml:space="preserve" x="66" y="388" font-size="12">  SLAVE</text>
+<text class="scrt" xml:space="preserve" x="66" y="408" font-size="12">  REMOTE CONTROL</text>
+<text class="scrt" xml:space="preserve" x="66" y="428" font-size="12">  RESET TELLER</text>
+<text class="note" x="55" y="456">&#9650; &#9660; kiezen, OK bevestigen</text>
+
+<!-- takken -->
+<path class="flow" d="M265,392 L295,392 L295,352 L330,352" marker-end="url(#ab)"/>
+<path class="flow" d="M295,392 L295,512 L330,512" marker-end="url(#ab)"/>
+<text class="flowt" x="300" y="342">OK</text>
+<text class="flowt" x="300" y="530">OK</text>
+
+<!-- Autonoom rijdend -->
+<text class="cap" x="340" y="332">Autonoom — rijdend (F2.1)</text>
+<rect class="scr" x="340" y="342" width="200" height="80"/>
+<text class="scrt" xml:space="preserve" x="350" y="362" font-size="11">AUTONOOM       87%</text>
+<text class="scrt" xml:space="preserve" x="350" y="378" font-size="11">VOORUIT    STAND 2</text>
+<text class="scrt" xml:space="preserve" x="350" y="394" font-size="11">MODE:       125 s</text>
+<text class="scrt" xml:space="preserve" x="350" y="410" font-size="11">TOTAAL:     483 s</text>
+
+<path class="flow" d="M540,382 L620,382" marker-end="url(#ab)"/>
+<text class="flowt" x="545" y="374">obstakel &lt; 20 cm</text>
+<path class="flow" d="M620,410 L580,410 L580,428 L540,428 L540,400" stroke-dasharray="5 4" marker-end="url(#ab)"/>
+<text class="flowt" x="556" y="444">&#8805; 60 cm vrij</text>
+
+<!-- Autonoom obstakel -->
+<text class="cap" x="630" y="332">Autonoom — stilstand (F2.3)</text>
+<rect class="scr" x="630" y="342" width="200" height="80"/>
+<text class="scrt" xml:space="preserve" x="640" y="362" font-size="11">AUTONOOM       87%</text>
+<text class="scrt" xml:space="preserve" x="640" y="378" font-size="11">STATUS: OBSTAKEL</text>
+<text class="scrt" xml:space="preserve" x="640" y="394" font-size="11">MODE:       131 s</text>
+<text class="scrt" xml:space="preserve" x="640" y="410" font-size="11">TOTAAL:     489 s</text>
+
+<!-- Slave volgt -->
+<text class="cap" x="340" y="492">Slave — volgt lijn en voorganger (F3.1, F3.2)</text>
+<rect class="scr" x="340" y="502" width="200" height="80"/>
+<text class="scrt" xml:space="preserve" x="350" y="522" font-size="11">SLAVE          85%</text>
+<text class="scrt" xml:space="preserve" x="350" y="538" font-size="11">VOORUIT</text>
+<text class="scrt" xml:space="preserve" x="350" y="554" font-size="11">MODE:        42 s</text>
+<text class="scrt" xml:space="preserve" x="350" y="570" font-size="11">TOTAAL:     531 s</text>
+
+<path class="flow" d="M540,542 L620,542" marker-end="url(#ab)"/>
+<text class="flowt" x="546" y="534">voorganger stopt</text>
+<path class="flow" d="M620,570 L580,570 L580,588 L540,588 L540,560" stroke-dasharray="5 4" marker-end="url(#ab)"/>
+<text class="flowt" x="546" y="604">voorganger vertrekt</text>
+
+<!-- Slave wacht -->
+<text class="cap" x="630" y="492">Slave — wachtend (F3.3)</text>
+<rect class="scr" x="630" y="502" width="200" height="80"/>
+<text class="scrt" xml:space="preserve" x="640" y="522" font-size="11">SLAVE          85%</text>
+<text class="scrt" xml:space="preserve" x="640" y="538" font-size="11">STATUS: WACHT</text>
+<text class="scrt" xml:space="preserve" x="640" y="554" font-size="11">MODE:        57 s</text>
+<text class="scrt" xml:space="preserve" x="640" y="570" font-size="11">TOTAAL:     546 s</text>
+
+<text class="note" x="40" y="632">Een lange druk op OK stopt de auto en brengt de gebruiker terug naar het hoofdmenu (F6). Het scherm voor Remote control (F4) volgt dezelfde</text>
+<text class="note" x="40" y="648">regelindeling, met op regel 2 de rijrichting en de snelheidsstand. De getoonde waarden zijn voorbeelden.</text>
+</svg>

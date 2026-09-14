@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 800" width="900" height="800">
+<style>
+  text{font-family:Arial,Helvetica,sans-serif;fill:#111}
+  .ttl{font-size:18px;font-weight:bold}
+  .sub{font-size:12.5px;fill:#555}
+  .vw{font-size:14px;font-weight:bold}
+  .lbl{font-size:12.5px}
+  .note{font-size:11.5px;fill:#555;font-style:italic}
+  .body{fill:#f5f5f5;stroke:#111;stroke-width:2}
+  .part{fill:#e4e4e4;stroke:#111;stroke-width:1.5}
+  .wheel{fill:#bfbfbf;stroke:#111;stroke-width:1.5}
+  .hid{fill:none;stroke:#111;stroke-width:1.3;stroke-dasharray:6 4}
+  .led{fill:#fff;stroke:#111;stroke-width:1.8}
+  .lead{stroke:#1F6F8B;stroke-width:1.1;fill:none}
+  .numc{fill:#1F6F8B}
+  .numt{fill:#fff;font-size:11px;font-weight:bold;text-anchor:middle}
+  .scr{fill:#1a1a1a;stroke:#111;stroke-width:1.5}
+  .scrt{fill:#fff;font-family:Consolas,"Courier New",monospace;font-size:9px}
+  .btn{fill:#fff;stroke:#111;stroke-width:1.6}
+  .btnt{font-size:11px;font-weight:bold;text-anchor:middle}
+  .hatch{fill:url(#hatch);stroke:#111;stroke-width:1.5}
+</style>
+<defs>
+  <pattern id="hatch" width="7" height="7" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+    <line x1="0" y1="0" x2="0" y2="7" stroke="#111" stroke-width="1.4"/>
+  </pattern>
+  <marker id="ar" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto">
+    <path d="M0,0 L8,3 L0,6 z" fill="#1F6F8B"/>
+  </marker>
+</defs>
+
+<rect width="900" height="800" fill="#fff"/>
+
+<text class="ttl" x="40" y="34">Figuur 1 — Bedieningselementen en sensoren van de Robot-car</text>
+<text class="sub" x="40" y="54">User interface bij F1 (rijden), F2 (autonoom), F3 (slave mode) en F5/F6 (display en menu). Schets is niet op schaal.</text>
+
+<!-- ================= BOVENAANZICHT ================= -->
+<text class="vw" x="130" y="86">Bovenaanzicht</text>
+<text class="lbl" x="248" y="86">voorzijde</text>
+<path class="lead" d="M310,82 L340,82" marker-end="url(#ar)"/>
+
+<!-- wielen -->
+<rect class="wheel" x="108" y="150" width="22" height="55" rx="3"/>
+<rect class="wheel" x="370" y="150" width="22" height="55" rx="3"/>
+<rect class="wheel" x="108" y="315" width="22" height="55" rx="3"/>
+<rect class="wheel" x="370" y="315" width="22" height="55" rx="3"/>
+<!-- chassis -->
+<rect class="body" x="130" y="125" width="240" height="270" rx="10"/>
+
+<!-- 1 ultrasoon -->
+<rect class="part" x="195" y="106" width="110" height="32" rx="4"/>
+<circle class="part" cx="222" cy="122" r="12"/>
+<circle class="part" cx="278" cy="122" r="12"/>
+
+<!-- 2 lijnsensor (onderzijde) -->
+<rect class="hid" x="175" y="152" width="150" height="18" rx="3"/>
+<circle cx="196" cy="161" r="3.5" fill="#111"/>
+<circle cx="232" cy="161" r="3.5" fill="#111"/>
+<circle cx="268" cy="161" r="3.5" fill="#111"/>
+<circle cx="304" cy="161" r="3.5" fill="#111"/>
+
+<!-- 3 display -->
+<rect class="scr" x="160" y="190" width="180" height="62" rx="3"/>
+<text class="scrt" xml:space="preserve" x="170" y="205">AUTONOOM       87%</text>
+<text class="scrt" xml:space="preserve" x="170" y="219">VOORUIT    STAND 2</text>
+<text class="scrt" xml:space="preserve" x="170" y="233">MODE:       125 s</text>
+<text class="scrt" xml:space="preserve" x="170" y="247">TOTAAL:     483 s</text>
+
+<!-- 4 knoppen -->
+<circle class="btn" cx="190" cy="285" r="15"/><text class="btnt" x="190" y="290">&#9650;</text>
+<circle class="btn" cx="250" cy="285" r="15"/><text class="btnt" x="250" y="290">&#9660;</text>
+<circle class="btn" cx="310" cy="285" r="15"/><text class="btnt" x="310" y="289" font-size="9">OK</text>
+
+<!-- 5 batterij -->
+<rect class="part" x="155" y="315" width="190" height="32" rx="3"/>
+<text class="lbl" x="250" y="336" text-anchor="middle" font-size="11">batterijen</text>
+
+<!-- 6 richting-LEDs / 8 voedings-LED -->
+<circle class="led" cx="152" cy="368" r="9"/>
+<circle class="led" cx="348" cy="368" r="9"/>
+<circle class="led" cx="250" cy="368" r="8"/>
+
+<!-- 7 reflector -->
+<rect class="hatch" x="205" y="387" width="90" height="16"/>
+
+<!-- callouts links -->
+<circle class="numc" cx="85" cy="122" r="11"/><text class="numt" x="85" y="126">1</text>
+<path class="lead" d="M96,122 L195,122"/>
+<circle class="numc" cx="85" cy="161" r="11"/><text class="numt" x="85" y="165">2</text>
+<path class="lead" d="M96,161 L175,161"/>
+<circle class="numc" cx="85" cy="221" r="11"/><text class="numt" x="85" y="225">3</text>
+<path class="lead" d="M96,221 L160,221"/>
+<circle class="numc" cx="85" cy="285" r="11"/><text class="numt" x="85" y="289">4</text>
+<path class="lead" d="M96,285 L175,285"/>
+<!-- callouts rechts -->
+<circle class="numc" cx="425" cy="331" r="11"/><text class="numt" x="425" y="335">5</text>
+<path class="lead" d="M414,331 L345,331"/>
+<circle class="numc" cx="425" cy="368" r="11"/><text class="numt" x="425" y="372">6</text>
+<path class="lead" d="M414,368 L357,368"/>
+<circle class="numc" cx="425" cy="410" r="11"/><text class="numt" x="425" y="414">7</text>
+<path class="lead" d="M414,410 L295,398"/>
+<circle class="numc" cx="250" cy="432" r="11"/><text class="numt" x="250" y="436">8</text>
+<path class="lead" d="M250,421 L250,377"/>
+
+<!-- ================= ACHTERAANZICHT ================= -->
+<text class="vw" x="565" y="86">Achteraanzicht</text>
+
+<circle class="wheel" cx="596" cy="298" r="34"/>
+<circle class="wheel" cx="794" cy="298" r="34"/>
+<rect class="body" x="570" y="200" width="250" height="110" rx="8"/>
+<rect class="hatch" x="650" y="222" width="90" height="40"/>
+<circle class="led" cx="600" cy="285" r="11"/>
+<circle class="led" cx="790" cy="285" r="11"/>
+<circle class="led" cx="695" cy="285" r="9"/>
+
+<circle class="numc" cx="600" cy="345" r="11"/><text class="numt" x="600" y="349">6</text>
+<path class="lead" d="M600,334 L600,297"/>
+<circle class="numc" cx="695" cy="345" r="11"/><text class="numt" x="695" y="349">8</text>
+<path class="lead" d="M695,334 L695,295"/>
+<circle class="numc" cx="850" cy="242" r="11"/><text class="numt" x="850" y="246">7</text>
+<path class="lead" d="M839,242 L740,242"/>
+
+<text class="note" x="565" y="380">De richting-LED's zijn vanaf de achterzijde</text>
+<text class="note" x="565" y="396">zichtbaar; de reflector maakt dat deze auto</text>
+<text class="note" x="565" y="412">zelf als voorganger gevolgd kan worden (F3.2).</text>
+
+<!-- ================= LEGENDA ================= -->
+<line x1="40" y1="470" x2="860" y2="470" stroke="#111" stroke-width="1"/>
+<text class="vw" x="40" y="494">Legenda</text>
+
+<circle class="numc" cx="52" cy="522" r="10"/><text class="numt" x="52" y="526">1</text>
+<text class="lbl" x="70" y="526">Afstandssensor voorzijde — meet de vrije ruimte vóór de auto (F2.2, F3.2, T8)</text>
+<circle class="numc" cx="52" cy="550" r="10"/><text class="numt" x="52" y="554">2</text>
+<text class="lbl" x="70" y="554">Lijnsensor aan de onderzijde — detecteert de zwarte lijn (F3.1, T9)</text>
+<circle class="numc" cx="52" cy="578" r="10"/><text class="numt" x="52" y="582">3</text>
+<text class="lbl" x="70" y="582">Display, vier regels — mode, rijrichting en snelheidsstand, tijden en batterijniveau (F5, T10.1)</text>
+<circle class="numc" cx="52" cy="606" r="10"/><text class="numt" x="52" y="610">4</text>
+<text class="lbl" x="70" y="610">Bedieningstoetsen &#9650; &#9660; OK — menu doorlopen en mode kiezen (F6, T10.2)</text>
+<circle class="numc" cx="52" cy="634" r="10"/><text class="numt" x="52" y="638">5</text>
+<text class="lbl" x="70" y="638">Batterijhouder — voeding van motoren en elektronica (T6)</text>
+<circle class="numc" cx="52" cy="662" r="10"/><text class="numt" x="52" y="666">6</text>
+<text class="lbl" x="70" y="666">Richting-LED's links/rechts, alleen achter — knipperen tijdens draaien (F1.4, T11)</text>
+<circle class="numc" cx="52" cy="690" r="10"/><text class="numt" x="52" y="694">7</text>
+<text class="lbl" x="70" y="694">Reflector achterzijde — maakt volgen door een andere robot-car mogelijk (T7)</text>
+<circle class="numc" cx="52" cy="718" r="10"/><text class="numt" x="52" y="722">8</text>
+<text class="lbl" x="70" y="722">Voedings-LED — brandt continu zolang de auto is ingeschakeld (T6.3)</text>
+
+<text class="note" x="40" y="758">Plaats en functie van de bedieningselementen liggen hiermee vast. Het aantal wielen, het type display en het type sensoren volgen</text>
+<text class="note" x="40" y="776">in het technisch ontwerp. De remote control (F4) is een los apparaat en staat daarom niet in deze figuur.</text>
+</svg>

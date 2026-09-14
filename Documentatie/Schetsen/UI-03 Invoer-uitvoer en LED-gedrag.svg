@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 764" width="900" height="764">
+<style>
+  text{font-family:Arial,Helvetica,sans-serif;fill:#111}
+  .ttl{font-size:18px;font-weight:bold}
+  .sub{font-size:12.5px;fill:#555}
+  .sec{font-size:14px;font-weight:bold}
+  .colh{font-size:13px;font-weight:bold;text-anchor:middle}
+  .box{fill:#f2f2f2;stroke:#111;stroke-width:1.5}
+  .core{fill:#e0e0e0;stroke:#111;stroke-width:2}
+  .bt{font-size:12px;text-anchor:middle}
+  .bts{font-size:10.5px;fill:#555;text-anchor:middle}
+  .note{font-size:11.5px;fill:#555;font-style:italic}
+  .sig{stroke:#111;stroke-width:2;fill:none}
+  .sigl{font-size:11.5px;text-anchor:end}
+  .grid{stroke:#ccc;stroke-width:0.8}
+  .dim{stroke:#1F6F8B;stroke-width:1.1;fill:none}
+  .dimt{font-size:11px;fill:#1F6F8B}
+</style>
+<defs>
+  <marker id="ab" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto">
+    <path d="M0,0 L8,3 L0,6 z" fill="#111"/>
+  </marker>
+  <marker id="a1" markerWidth="8" markerHeight="8" refX="7" refY="2.6" orient="auto">
+    <path d="M0,0 L7,2.6 L0,5.2 z" fill="#1F6F8B"/>
+  </marker>
+  <marker id="a2" markerWidth="8" markerHeight="8" refX="1" refY="2.6" orient="auto">
+    <path d="M7,0 L0,2.6 L7,5.2 z" fill="#1F6F8B"/>
+  </marker>
+</defs>
+<rect width="900" height="764" fill="#fff"/>
+
+<text class="ttl" x="40" y="34">Figuur 3 — Invoer, uitvoer en gedrag van de richting-LED's</text>
+<text class="sub" x="40" y="54">Wat de gebruiker en de omgeving aanbieden, en wat de Robot-car daarop terugmeldt.</text>
+
+<!-- ============ A ============ -->
+<text class="sec" x="40" y="92">A. Invoer- en uitvoeroverzicht</text>
+
+<text class="colh" x="150" y="122">Invoer</text>
+<text class="colh" x="450" y="122">Systeem</text>
+<text class="colh" x="750" y="122">Uitvoer</text>
+
+<!-- invoer -->
+<rect class="box" x="55" y="136" width="190" height="50" rx="4"/>
+<text class="bt" x="150" y="159">Bedieningstoetsen &#9650; &#9660; OK</text>
+<text class="bts" x="150" y="175">F6 — mode kiezen</text>
+
+<rect class="box" x="55" y="200" width="190" height="50" rx="4"/>
+<text class="bt" x="150" y="223">Ultrasoon afstandssensor</text>
+<text class="bts" x="150" y="239">F2.2, F3.2 — afstand vooruit</text>
+
+<rect class="box" x="55" y="264" width="190" height="50" rx="4"/>
+<text class="bt" x="150" y="287">Lijnsensor-array</text>
+<text class="bts" x="150" y="303">F3.1 — positie t.o.v. de lijn</text>
+
+<rect class="box" x="55" y="328" width="190" height="50" rx="4"/>
+<text class="bt" x="150" y="351">USART-commando</text>
+<text class="bts" x="150" y="367">T5 — testcommando's, start/stop (F2.5)</text>
+
+<rect class="box" x="55" y="392" width="190" height="50" rx="4"/>
+<text class="bt" x="150" y="415">Remote control</text>
+<text class="bts" x="150" y="431">F4 — rijden, draaien, snelheid</text>
+
+<!-- kern -->
+<rect class="core" x="330" y="150" width="240" height="292" rx="6"/>
+<text class="bt" x="450" y="226" font-size="14" font-weight="bold">Robot-car</text>
+<text class="bts" x="450" y="246">ATmega328(p)</text>
+<text class="bts" x="450" y="292">bepaalt de actieve mode</text>
+<text class="bts" x="450" y="312">bepaalt rijrichting en snelheid</text>
+<text class="bts" x="450" y="332">bewaakt de afstand vooruit</text>
+<text class="bts" x="450" y="352">telt en bewaart de gebruikstijd</text>
+
+<!-- uitvoer -->
+<rect class="box" x="655" y="136" width="190" height="50" rx="4"/>
+<text class="bt" x="750" y="159">Display, vier regels</text>
+<text class="bts" x="750" y="175">F5 — mode, richting, tijden</text>
+
+<rect class="box" x="655" y="200" width="190" height="50" rx="4"/>
+<text class="bt" x="750" y="223">Richting-LED's links/rechts</text>
+<text class="bts" x="750" y="239">F1.4 — knipperen bij draaien</text>
+
+<rect class="box" x="655" y="264" width="190" height="50" rx="4"/>
+<text class="bt" x="750" y="287">Voedings-LED</text>
+<text class="bts" x="750" y="303">T6.3 — auto staat aan</text>
+
+<rect class="box" x="655" y="328" width="190" height="50" rx="4"/>
+<text class="bt" x="750" y="351">DC-motoren via H-brug</text>
+<text class="bts" x="750" y="367">F1.1, F1.2, F1.3 — rijden</text>
+
+<!-- pijlen invoer -> kern -->
+<path class="sig" d="M245,161 L290,161 L290,200 L330,200" marker-end="url(#ab)" stroke-width="1.5"/>
+<path class="sig" d="M245,225 L290,225 L290,240 L330,240" marker-end="url(#ab)" stroke-width="1.5"/>
+<path class="sig" d="M245,289 L290,289 L290,275 L330,275" marker-end="url(#ab)" stroke-width="1.5"/>
+<path class="sig" d="M245,353 L290,353 L290,315 L330,315" marker-end="url(#ab)" stroke-width="1.5"/>
+<path class="sig" d="M245,417 L290,417 L290,400 L330,400" marker-end="url(#ab)" stroke-width="1.5"/>
+<!-- pijlen kern -> uitvoer -->
+<path class="sig" d="M570,200 L610,200 L610,161 L655,161" marker-end="url(#ab)" stroke-width="1.5"/>
+<path class="sig" d="M570,240 L610,240 L610,225 L655,225" marker-end="url(#ab)" stroke-width="1.5"/>
+<path class="sig" d="M570,275 L610,275 L610,289 L655,289" marker-end="url(#ab)" stroke-width="1.5"/>
+<path class="sig" d="M570,315 L610,315 L610,353 L655,353" marker-end="url(#ab)" stroke-width="1.5"/>
+
+<text class="note" x="40" y="468">De aan/uit-schakelaar en de batterijen zijn geen onderdeel van de bediening en zijn hier weggelaten; zie figuur 1 en T6.</text>
+
+<g transform="translate(0,64)">
+<line x1="40" y1="428" x2="860" y2="428" stroke="#111" stroke-width="1"/>
+
+<!-- ============ B ============ -->
+<text class="sec" x="40" y="456">B. Gedrag van de LED's bij een draaicommando naar links (F1.4, T6.3, T11)</text>
+
+<!-- raster -->
+<g class="grid">
+  <line x1="200" y1="480" x2="200" y2="650"/><line x1="240" y1="480" x2="240" y2="650"/>
+  <line x1="280" y1="480" x2="280" y2="650"/><line x1="320" y1="480" x2="320" y2="650"/>
+  <line x1="360" y1="480" x2="360" y2="650"/><line x1="400" y1="480" x2="400" y2="650"/>
+  <line x1="440" y1="480" x2="440" y2="650"/><line x1="480" y1="480" x2="480" y2="650"/>
+  <line x1="520" y1="480" x2="520" y2="650"/><line x1="560" y1="480" x2="560" y2="650"/>
+  <line x1="600" y1="480" x2="600" y2="650"/><line x1="640" y1="480" x2="640" y2="650"/>
+  <line x1="680" y1="480" x2="680" y2="650"/><line x1="720" y1="480" x2="720" y2="650"/>
+  <line x1="760" y1="480" x2="760" y2="650"/><line x1="800" y1="480" x2="800" y2="650"/>
+</g>
+
+<text class="sigl" x="185" y="514">Draaicommando links</text>
+<path class="sig" d="M195,518 L280,518 L280,494 L680,494 L680,518 L830,518"/>
+
+<text class="sigl" x="185" y="558">Richting-LED links</text>
+<path class="sig" d="M195,562 L280,562 L280,538 L320,538 L320,562 L360,562 L360,538 L400,538 L400,562 L440,562 L440,538 L480,538 L480,562 L520,562 L520,538 L560,538 L560,562 L600,562 L600,538 L640,538 L640,562 L680,562 L830,562"/>
+
+<text class="sigl" x="185" y="600">Richting-LED rechts</text>
+<path class="sig" d="M195,604 L830,604"/>
+
+<text class="sigl" x="185" y="640">Voedings-LED</text>
+<path class="sig" d="M195,644 L215,644 L215,620 L830,620"/>
+
+<!-- maatvoering -->
+<path class="dim" d="M281,474 L319,474" marker-start="url(#a2)" marker-end="url(#a1)"/>
+<text class="dimt" x="324" y="478">50 ms aan, daarna 50 ms uit</text>
+<path class="dim" d="M680,470 L680,494"/>
+<text class="dimt" x="688" y="466">draaien stopt &#8594; LED direct uit</text>
+
+<text class="note" x="40" y="672">Hoog = LED brandt, laag = LED uit. Bij een draaicommando naar rechts is het beeld gespiegeld. De voedings-LED brandt continu zolang de</text>
+<text class="note" x="40" y="688">robot-car is ingeschakeld en staat los van de rijrichting.</text>
+</g>
+</svg>
